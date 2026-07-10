@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+    string nomes[26]={};
+    string posicoes[26]={};
+    double peso[26]={};
+    double altura[26]={1.};
+    string nascimento[26]={};
+    int album[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int op=0;
+    do{
+        cout<<"1. Elenco da Seleção Portuguesa"<<endl;
+        cout<<"2. Abrir novo pacote de figurinhas"<<endl;
+        cout<<"3. Status do álbum"<<endl;
+        cout<<"4. Figurinhas repetidas"<<endl;
+        cout<<"5. Busca por nome de jogador"<<endl;
+        cout<<"6. Busca por posição"<<endl;
+        cout<<"7. Sair"<<endl;
+        cin>>op;
+
+        if(op==1){
+            cout<<nomes<<endl;
+            cout<<posicoes<<endl;
+            cout<<peso<<endl;
+            cout<<altura<<endl;
+            cout<<nascimento<<endl;
+        }
+        else if(op==2){
+            
+        }
+        else if(op==3){
+
+        }
+        else if(op==4){
+
+        }
+        else if(op==5){
+            
+        }
+        else if(op==6){
+            
+        }
+        else if(op==7){
+            return 0;
+        }
+    }while();
+
+}
