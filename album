@@ -2,13 +2,26 @@
 using namespace std;
 int main() 
 {
-    string nomes[26]={};
-    string posicoes[26]={};
-    double peso[26]={};
-    double altura[26]={1.};
-    string nascimento[26]={};
+    string elenco[26]={"Diogo Costa", "José de Sá", "Rui Silva", "Nélson Semedo", "Rúben Dias", "Tomás Araújo", "Diogo Dalot", "Renato Veiga", "Gonçalo Inácio", "João Cancelo", 
+    "Nuno Mendes", "Matheus Nunes", "Bruno Fernandes", "Bernardo Silva", "João Neves", "Rúben Neves", "Vitinha", "Samú Costa", "Cristiano Ronaldo", "Gonçalo Ramos",
+    "João Félix", "Francisco Trincão", "Rafael Leão", "Pedro Neto", "Gonçalo Guedes", "Francisco Conceição"};
+
+    string posicoes[26]={"Goleiro", "Goleiro", "Goleiro", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor","Defensor",
+    "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Atacante", "Atacante", "Atacante", "Atacante", "Atacante", 
+    "Atacante", "Atacante", "Atacante"};
+
+    double peso[26]={86, 84, 91, 67, 82, 79, 76, 83, 82, 74,70, 78, 69, 64, 72, 80, 64, 73, 85, 88,70, 72, 81, 62, 68, 64};
+
+    double altura[26]={1.86, 1.92, 1.89, 1.77, 1.87, 1.87, 1.83, 1.90, 1.86, 1.82,1.80, 1.83, 1.79, 1.73, 1.74, 1.80, 1.72, 1.84, 1.87, 1.85,1.81, 1.84, 1.88, 1.72, 1.79, 1.70};
+
+    string nascimento[26]={"19/09/1999","17/01/1993","07/02/1994","16/11/1993","14/05/1997","16/05/2002","18/03/1999","29/07/2003" "27/05/1994","19/06/2002","27/08/1998",
+    "08/09/1994","10/08/1994","27/09/2004","13/03/1997","13/02/2000","27/11/2000","05/02/1985","20/06/2001","10/11/1999","29/12/1999","10/06/1999","09/03/2000","29/11/1996",
+    "14/12/2002"};
+
     int album[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int op=0;
+    srand(time(NULL));
+
     do{
         cout<<"1. Elenco da Seleção Portuguesa"<<endl;
         cout<<"2. Abrir novo pacote de figurinhas"<<endl;
@@ -20,30 +33,130 @@ int main()
         cin>>op;
 
         if(op==1){
-            cout<<nomes<<endl;
-            cout<<posicoes<<endl;
-            cout<<peso<<endl;
-            cout<<altura<<endl;
-            cout<<nascimento<<endl;
+            cout<<"-+-============--+- Seleção Portuguesa -+--============-+-"<<endl;
+            for(int i=0;i<26;i++){
+                cout<<i+1<<" - ";
+                cout<<elenco[i];
+                cout<<" | ";
+                cout<<posicoes[i]<<endl; 
+            }
         }
         else if(op==2){
-            
-        }
-        else if(op==3){
+            cout<<"-+-============--+- Abrindo pacote -+--============-+-"<<endl;
+             for(int i=0;i<3;i++){
+                int sorteio = rand()%26;
+                cout<<i+1<<". "<<elenco[sorteio];
+                cout<<" ("<<posicoes[sorteio]<<")";
 
+                if(album[sorteio]>=1){
+                    cout<<" -> [REPETIDA!]";
+                }
+                cout<<endl;
+                album[sorteio]++;
+                }
+                cout<<"Pacote adicionado ao album!"<<endl;
+            }
+        else if(op==3){
+            cout<<"========== Status do album =========="<<endl;
+            cout<<endl;
+            cout<<"Figurinhas ja dquiridas:"<<endl;
+            for(int i=0;i<26;i++){
+                if(album[i]>=1){
+                    cout<<"["<<i+1<<"] ";
+                    cout<<elenco[i];
+                    cout<<" ("<<posicoes[i]<<")";
+                    if(album[i]>1)
+                    {
+                        cout<<" - Quantidade: "<<album[i];
+                    }
+                    cout<<endl;
+                }
+            }
+            cout<<endl;
+            cout<<"Figurinhas que ainda faltam:"<<endl;
+            for(int i=0;i<26;i++){
+                if(album[i]==0){
+                    cout<<"["<<i+1<<"] ";
+                    cout<<elenco[i];
+                    cout<<" ("<<posicoes[i]<<")";
+                   cout<<endl;
+                }
+            }
+            cout<<"====================================="<<endl;
         }
         else if(op==4){
-
+            int encontrou=0;
+            cout<<"========== Repetidas =========="<<endl;
+            for(int i=0;i<26;i++){
+                if(album[i]>=2){
+                    cout<<elenco[i]<<" | "<<posicoes[i]<<" | "<<" Quantidade: "<<album[i]<<endl;
+                    encontrou++;
+                }
+                if(encontrou==0){
+                    cout<<"Ainda não há figurinhas repetidas!"<<endl;
+                }
+            }
         }
         else if(op==5){
-            
+            string busca;
+            cout<<"Digite o nome do jogador: ";
+            cin.ignore();
+            getline(cin,busca);
+            for(int i=0;i<26;i++)
+            {
+                if(elenco[i]==busca)
+                {
+                    cout<<"========== Jogador =========="<<endl;
+                    cout<<"Nome: "<<elenco[i]<<endl;
+                    cout<<"Posicao: "<<posicoes[i]<<endl;
+                    cout<<"Altura: "<<altura[i]<<" m"<<endl;
+                    cout<<"Peso: "<<peso[i]<<" kg"<<endl;
+                    cout<<"Nascimento: "<<nascimento[i]<<endl;
+                    cout<<endl;
+                    if(album[i]>=1)
+                    {
+                        cout<<"Figurinha adquirida!"<<endl;
+                        cout<<"Quantidade: "<<album[i]<<endl;
+                    }
+                    else
+                    {
+                        cout<<"Figurinha ainda falta!"<<endl;
+                    }
+                }
+            }
+
         }
         else if(op==6){
-            
-        }
-        else if(op==7){
-            return 0;
-        }
-    }while();
+            string busca;
+            cout<<"Digite a posicao desejada: ";
+            cin.ignore();
+            getline(cin,busca);
+            cout<<"========== "<<busca<<" =========="<<endl;
+            for(int i=0;i<26;i++)
+            {
+                if(posicoes[i]==busca)
+                {
+                    cout<<"Nome: "<<elenco[i]<<endl;
+                    cout<<"Altura: "<<altura[i]<<" m"<<endl;
+                    cout<<"Peso: "<<peso[i]<<" kg"<<endl;
 
+                    if(album[i]>=1)
+                    {
+                        cout<<"Figurinha: Possui";
+                    }
+                    else
+                    {
+                        cout<<"Figurinha: Falta";
+                    }
+                    cout<<endl;
+                    cout<<"---------------------------"<<endl;
+                }
+            }
+
+        }
+        else if(op==7){ 
+            cout<<"Encerrando o album de figurinhas..."<<endl;
+        }
+    }while(op!=7);
+return 0;
 }
