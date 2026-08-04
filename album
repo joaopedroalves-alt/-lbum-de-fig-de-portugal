@@ -23,6 +23,7 @@ int main()
     srand(time(NULL));
 
     do{
+        system("clear");
         cout<<"1. Elenco da Seleção Portuguesa"<<endl;
         cout<<"2. Abrir novo pacote de figurinhas"<<endl;
         cout<<"3. Status do álbum"<<endl;
@@ -31,8 +32,9 @@ int main()
         cout<<"6. Busca por posição"<<endl;
         cout<<"7. Sair"<<endl;
         cin>>op;
-
+        
         if(op==1){
+            
             cout<<"-+-============--+- Seleção Portuguesa -+--============-+-"<<endl;
             for(int i=0;i<26;i++){
                 cout<<i+1<<" - ";
@@ -40,7 +42,9 @@ int main()
                 cout<<" | ";
                 cout<<posicoes[i]<<endl; 
             }
-        }
+           sleep(20);
+        } 
+        
         else if(op==2){
             cout<<"-+-============--+- Abrindo pacote -+--============-+-"<<endl;
              for(int i=0;i<3;i++){
@@ -55,6 +59,7 @@ int main()
                 album[sorteio]++;
                 }
                 cout<<"Pacote adicionado ao album!"<<endl;
+                sleep(5);
             }
         else if(op==3){
             cout<<"========== Status do album =========="<<endl;
@@ -83,6 +88,7 @@ int main()
                 }
             }
             cout<<"====================================="<<endl;
+            sleep(15);
         }
         else if(op==4){
             int encontrou=0;
@@ -96,6 +102,7 @@ int main()
                     cout<<"Ainda não há figurinhas repetidas!"<<endl;
                 }
             }
+            sleep(10);
         }
         else if(op==5){
             string busca;
@@ -124,7 +131,7 @@ int main()
                     }
                 }
             }
-
+            sleep(20);
         }
         else if(op==6){
             string busca;
@@ -152,7 +159,7 @@ int main()
                     cout<<"---------------------------"<<endl;
                 }
             }
-
+        sleep(20);
         }
         else if(op==7){ 
             cout<<"Encerrando o album de figurinhas..."<<endl;
