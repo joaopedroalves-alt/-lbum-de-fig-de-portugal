@@ -30,80 +30,76 @@ int main()
     string n="\033[0m";
 
     do{system("clear");
-        cout<<""<<g<<"    █                                                                                                                                      "<<endl;
-        cout<<""<<g<<"   █                                                             █"<<r<<"█ █                                                                      "<<endl;
-        cout<<""<<g<<"                                                                █"<<r<<"  █                                                                       "<<endl;
-        cout<<""<<g<<"  ███  █     ████  █   █ █   █     ████ █████ █     █████  ███   █"<<r<<"██   ███     ████   ███  ████  █████ █   █  ███  █   █ █████  ████  ███  "<<endl;
-        cout<<""<<g<<" █   █ █     █   █ █   █ ██ ██    █     █     █     "<<y<<"█     █     █"<<r<<"   █ █   █    █   █ █   █ █   █   █   █   █ █     █   █ █     █     █   █ "<<endl;
-        cout<<""<<g<<" █████ █     ████  █   █ █ █ █     ███  ████  █     "<<y<<"████  █     █"<<r<<"████ █   █    ████  █   █ ████    █   █   █ █  ██ █   █ ████   ███  █████ "<<endl;
-        cout<<""<<g<<" █   █ █     █   █ █   █ █   █        █ █     █     "<<y<<"█     █     █"<<r<<"   █ █   █    █     █   █ █  █    █   █   █ █   █ █   █ █         █ █   █ "<<endl;
-        cout<<""<<g<<" █   █ █████ ████   ███  █   █    ████  █████ █████ █████  ███  █"<<r<<"   █  ███     █      ███  █   █   █    ███   ███   ███  █████ ████  █   █ "<<endl;
-        cout<<""<<g<<"                                                            █                                                                              "<<endl;
-        cout<<""<<g<<"                                                           █                                                                               "<<endl;
-        cout<<"                                                                                                                                           "<<endl;
-        cout<<"                                                     "<<y<<"██████████████████████████                                                          "<<endl;          
-        cout<<"                                                       ███"<<r<<"████████████████"<<y<<"███                                                 "<<endl;                                                                
-        cout<<"                                                          ██"<<r<<"████"<<y<<"████"<<r<<"████"<<y<<"██                  "<<endl; 
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
-        cout<<"                                                    "<<y<<"██    ████████████████    ██            "<<endl;
-        cout<<"                                            "<<y<<"██    ██"<<r<<"██"<<y<<"████"<<r<<"████████████████"<<y<<"████"<<r<<"██"<<y<<"██    ██    "<<endl;
-        cout<<"                                            █"<<r<<"█"<<y<<"█  █"<<r<<"████████████████████████████████"<<y<<"█  █"<<r<<"█"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"██"<<y<<"████"<<r<<"██████████"<<y<<"██████████"<<r<<"██████████"<<y<<"████"<<r<<"██"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"█████"<<y<<"█"<<r<<"███████"<<y<<"███"<<n<<"██████████"<<y<<"███"<<r<<"███████"<<y<<"█"<<r<<"█████"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"██████"<<y<<"█"<<r<<"█████"<<y<<"█"<<n<<"██████"<<bgb<<"::::"<<n<<"██████"<<y<<"█"<<r<<"█████"<<y<<"█"<<r<<"██████"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"███████"<<y<<"█"<<r<<"████"<<y<<"█"<<n<<"██████"<<bgb<<"::::"<<n<<"██████"<<y<<"█"<<r<<"████"<<y<<"█"<<r<<"███████"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"███████"<<y<<"█"<<r<<"█████"<<y<<"█"<<n<<"█████"<<bgb<<"::::"<<n<<"█████"<<y<<"█"<<r<<"█████"<<y<<"█"<<r<<"███████"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"████"<<y<<"█████"<<r<<"████"<<y<<"█"<<n<<"██████████████"<<y<<"█"<<r<<"████"<<y<<"█████"<<r<<"████"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"███"<<y<<"█    █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"█"<<bgb<<"::::"<<n<<"█"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█    █"<<r<<"███"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"██"<<y<<"█     █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"█"<<bgb<<"::::"<<n<<"█"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█     █"<<r<<"██"<<y<<"█    "<<endl;
-        cout<<"                                            █"<<r<<"█"<<y<<"█      █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"██████"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█      █"<<r<<"█"<<y<<"█    "<<endl;
-        cout<<"                                            ██       █"<<r<<"████"<<y<<"█"<<n<<"█████"<<bgb<<"::::"<<n<<"█████"<<y<<"█"<<r<<"████"<<y<<"█       ██    "<<endl;
-        cout<<"                                                     █"<<r<<"█████"<<y<<"█"<<n<<"████"<<bgb<<"::::"<<n<<"████"<<y<<"█"<<r<<"█████"<<y<<"█             "<<endl;
-        cout<<"                                                     █"<<r<<"██████"<<y<<"██"<<n<<"██"<<bgb<<"::::"<<n<<"██"<<y<<"██"<<r<<"██████"<<y<<"█             "<<endl;
-        cout<<"                                                      ██"<<r<<"██████"<<y<<"█"<<n<<"██████"<<y<<"█"<<r<<"██████"<<y<<"██              "<<endl;
-        cout<<"                                                        ██"<<r<<"█████"<<y<<"██████"<<r<<"█████"<<y<<"██                "<<endl;
-        cout<<"                                                          ███"<<r<<"██████████"<<y<<"███                  "<<endl;
-        cout<<"                                                           █"<<r<<"█"<<y<<"██████████"<<r<<"█"<<y<<"█                   "<<endl;
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
-        cout<<"                                                           █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
-        cout<<"                                                          █"<<r<<"█████"<<y<<"████"<<r<<"█████"<<y<<"█                  "<<endl;
-        cout<<"                                                        ██"<<r<<"████████████████"<<y<<"██                "<<endl;
-        cout<<"                                                     ██████████████████████████"<<n<<"             "<<endl;
-
+        cout<<""<<g<<"            █                                                                                                                                      "<<endl;
+        cout<<""<<g<<"           █                                                             █"<<r<<"█ █                                                                      "<<endl;
+        cout<<""<<g<<"                                                                        █"<<r<<"  █                                                                       "<<endl;
+        cout<<""<<g<<"          ███  █     ████  █   █ █   █     ████ █████ █     █████  ███   █"<<r<<"██   ███     ████   ███  ████  █████ █   █  ███  █   █ █████  ████  ███  "<<endl;
+        cout<<""<<g<<"         █   █ █     █   █ █   █ ██ ██    █     █     █     "<<y<<"█     █     █"<<r<<"   █ █   █    █   █ █   █ █   █   █   █   █ █     █   █ █     █     █   █ "<<endl;
+        cout<<""<<g<<"         █████ █     ████  █   █ █ █ █     ███  ████  █     "<<y<<"████  █     █"<<r<<"████ █   █    ████  █   █ ████    █   █   █ █  ██ █   █ ████   ███  █████ "<<endl;
+        cout<<""<<g<<"         █   █ █     █   █ █   █ █   █        █ █     █     "<<y<<"█     █     █"<<r<<"   █ █   █    █     █   █ █  █    █   █   █ █   █ █   █ █         █ █   █ "<<endl;
+        cout<<""<<g<<"         █   █ █████ ████   ███  █   █    ████  █████ █████ █████  ███  █"<<r<<"   █  ███     █      ███  █   █   █    ███   ███   ███  █████ ████  █   █ "<<endl;
+        cout<<""<<g<<"                                                                    █                                                                              "<<endl;
+        cout<<""<<g<<"                                                                   █                                                                               "<<endl;
+        cout<<"                                                                                                                                                   "<<endl;
+        cout<<"                                                             "<<y<<"██████████████████████████                                                          "<<endl;          
+        cout<<"                                                               ███"<<r<<"████████████████"<<y<<"███                                                 "<<endl;                                                                
+        cout<<"                                                                  ██"<<r<<"████"<<y<<"████"<<r<<"████"<<y<<"██                  "<<endl; 
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl; 
+        cout<<"                                                            "<<y<<"██    ████████████████    ██            "<<endl;
+        cout<<"                                                    "<<y<<"██    ██"<<r<<"██"<<y<<"████"<<r<<"████████████████"<<y<<"████"<<r<<"██"<<y<<"██    ██    "<<endl;
+        cout<<"                                                    █"<<r<<"█"<<y<<"█  █"<<r<<"████████████████████████████████"<<y<<"█  █"<<r<<"█"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"██"<<y<<"████"<<r<<"██████████"<<y<<"██████████"<<r<<"██████████"<<y<<"████"<<r<<"██"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"█████"<<y<<"█"<<r<<"███████"<<y<<"███"<<n<<"██████████"<<y<<"███"<<r<<"███████"<<y<<"█"<<r<<"█████"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"██████"<<y<<"█"<<r<<"█████"<<y<<"█"<<n<<"██████"<<bgb<<"::::"<<n<<"██████"<<y<<"█"<<r<<"█████"<<y<<"█"<<r<<"██████"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"███████"<<y<<"█"<<r<<"████"<<y<<"█"<<n<<"██████"<<bgb<<"::::"<<n<<"██████"<<y<<"█"<<r<<"████"<<y<<"█"<<r<<"███████"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"███████"<<y<<"█"<<r<<"█████"<<y<<"█"<<n<<"█████"<<bgb<<"::::"<<n<<"█████"<<y<<"█"<<r<<"█████"<<y<<"█"<<r<<"███████"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"████"<<y<<"█████"<<r<<"████"<<y<<"█"<<n<<"██████████████"<<y<<"█"<<r<<"████"<<y<<"█████"<<r<<"████"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"███"<<y<<"█    █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"█"<<bgb<<"::::"<<n<<"█"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█    █"<<r<<"███"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"██"<<y<<"█     █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"█"<<bgb<<"::::"<<n<<"█"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█     █"<<r<<"██"<<y<<"█    "<<endl;
+        cout<<"                                                    █"<<r<<"█"<<y<<"█      █"<<r<<"████"<<y<<"█"<<n<<"█"<<bgb<<":::"<<n<<"██████"<<bgb<<":::"<<n<<"█"<<y<<"█"<<r<<"████"<<y<<"█      █"<<r<<"█"<<y<<"█    "<<endl;
+        cout<<"                                                    ██       █"<<r<<"████"<<y<<"█"<<n<<"█████"<<bgb<<"::::"<<n<<"█████"<<y<<"█"<<r<<"████"<<y<<"█       ██    "<<endl;
+        cout<<"                                                             █"<<r<<"█████"<<y<<"█"<<n<<"████"<<bgb<<"::::"<<n<<"████"<<y<<"█"<<r<<"█████"<<y<<"█             "<<endl;
+        cout<<"                                                             █"<<r<<"██████"<<y<<"██"<<n<<"██"<<bgb<<"::::"<<n<<"██"<<y<<"██"<<r<<"██████"<<y<<"█             "<<endl;
+        cout<<"                                                              ██"<<r<<"██████"<<y<<"█"<<n<<"██████"<<y<<"█"<<r<<"██████"<<y<<"██              "<<endl;
+        cout<<"                                                                ██"<<r<<"█████"<<y<<"██████"<<r<<"█████"<<y<<"██                "<<endl;
+        cout<<"                                                                  ███"<<r<<"██████████"<<y<<"███                  "<<endl;
+        cout<<"                                                                   █"<<r<<"█"<<y<<"██████████"<<r<<"█"<<y<<"█                   "<<endl;
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
+        cout<<"                                                                   █"<<r<<"████"<<y<<"█  █"<<r<<"████"<<y<<"█                   "<<endl;
+        cout<<"                                                                  █"<<r<<"█████"<<y<<"████"<<r<<"█████"<<y<<"█                  "<<endl;
+        cout<<"                                                                ██"<<r<<"████████████████"<<y<<"██                "<<endl;
+        cout<<"                                                             ██████████████████████████"<<n<<"             "<<endl;
         
-        
-        
-        
-        cout<<"                                                1. Elenco da Seleção Portuguesa"<<endl;
-        cout<<"                                                2. Abrir novo pacote de figurinhas"<<endl;
-        cout<<"                                                3. Status do álbum"<<endl;
-        cout<<"                                                4. Figurinhas repetidas"<<endl;
-        cout<<"                                                5. Busca por nome de jogador"<<endl;
-        cout<<"                                                6. Busca por posição"<<endl;
-        cout<<"                                                7. Sair"<<endl;
+        cout<<"                                                        1. Elenco da Seleção Portuguesa"<<endl;
+        cout<<"                                                        2. Abrir novo pacote de figurinhas"<<endl;
+        cout<<"                                                        3. Status do álbum"<<endl;
+        cout<<"                                                        4. Figurinhas repetidas"<<endl;
+        cout<<"                                                        5. Busca por nome de jogador"<<endl;
+        cout<<"                                                        6. Busca por posição"<<endl;
+        cout<<"                                                        7. Sair"<<endl;
         if(!(cin >> op)){
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             op = -1;
         }
         if(op==1){
-            cout<<"-+-============--+- Seleção Portuguesa -+--============-+-"<<endl;
+            cout<<""<<r<<"-+-============--+- Seleção Portuguesa -+--============-+-"<<n<<""<<endl;
             for(int i=0;i<26;i++){
-                cout<<i+1<<" - ";
+                cout<<i+1<<""<<n<<" - ";
                 cout<<elenco[i];
                 cout<<" | ";
                 cout<<posicoes[i]<<endl; 
             }
-           sleep(20);
+           sleep(10);
         } 
         else if(op==2){
-            cout<<"-+-============--+- Abrindo pacote -+--============-+-"<<endl;
+            cout<<""<<r<<"-+-============--+- Abrindo pacote -+--============-+-"<<n<<""<<endl;
              for(int i=0;i<3;i++){
                 int sorteio = rand()%26;
-                cout<<i+1<<". "<<elenco[sorteio];
+                cout<<i+1<<""<<n<<". "<<elenco[sorteio];
                 cout<<" ("<<posicoes[sorteio]<<")";
                 if(album[sorteio]>=1){
                     cout<<" -> [REPETIDA!]";
@@ -111,13 +107,13 @@ int main()
                 cout<<endl;
                 album[sorteio]++;
                 }
-                cout<<"Pacote adicionado ao album!"<<endl;
+                cout<<""<<n<<"Pacote adicionado ao album!"<<endl;
                 sleep(5);
             }
         else if(op==3){
-            cout<<"-+-============--+- Status do album -+--============-+-"<<endl;
+            cout<<""<<r<<"-+-============--+- Status do album -+--============-+-"<<n<<""<<endl;
             cout<<endl;
-            cout<<"Figurinhas ja dquiridas:"<<endl;
+            cout<<""<<n<<"Figurinhas ja dquiridas:"<<endl;
             for(int i=0;i<26;i++){
                 if(album[i]>=1){
                     cout<<"["<<i+1<<"] ";
@@ -131,7 +127,7 @@ int main()
                 }
             }
             cout<<endl;
-            cout<<"Figurinhas que ainda faltam:"<<endl;
+            cout<<""<<n<<"Figurinhas que ainda faltam:"<<endl;
             for(int i=0;i<26;i++){
                 if(album[i]==0){
                     cout<<"["<<i+1<<"] ";
@@ -140,12 +136,12 @@ int main()
                    cout<<endl;
                 }
             }
-            cout<<"====================================="<<endl;
-            sleep(15);
+            cout<<""<<r<<"====================================="<<endl;
+            sleep(10);
         }
         else if(op==4){
             int encontrou=0;
-            cout<<"-+-============--+- Repetidas -+--============-+-"<<endl;
+            cout<<""<<r<<"-+-============--+- Repetidas -+--============-+-"<<n<<""<<endl;
             for(int i=0;i<26;i++){
                 if(album[i]>=2){
                     cout<<elenco[i]
@@ -155,20 +151,20 @@ int main()
                 }
             }
             if(encontrou==0){
-                cout<<"Ainda nao ha figurinhas repetidas!"<<endl;
+                cout<<""<<n<<"Ainda nao ha figurinhas repetidas!"<<endl;
             }
             sleep(10);
         }
         else if(op==5){
             string busca;
             int encontrou=0;
-            cout<<"Digite o nome do jogador: ";
+            cout<<""<<r<<"Digite o nome do jogador: "<<n<<"";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             getline(cin,busca);
             for(int i=0;i<26;i++){
                 if(elenco[i]==busca){
                     encontrou=1;
-                    cout<<"========== Jogador =========="<<endl;
+                    cout<<""<<r<<"========== Jogador =========="<<n<<""<<endl;
                     cout<<"Nome: "<<elenco[i]<<endl;
                     cout<<"Posicao: "<<posicoes[i]<<endl;
                     cout<<"Altura: "<<altura[i]<<" m"<<endl;
@@ -184,41 +180,41 @@ int main()
                 }
             }
             if(encontrou==0){
-                cout<<"Jogador nao encontrado!"<<endl;
+                cout<<""<<n<<"Jogador nao encontrado!"<<endl;
             }
             sleep(20);
         }
         else if(op==6){
             string busca;
             int encontrou=0;
-            cout<<"Digite a posicao desejada: ";
+            cout<<""<<r<<"Digite a posicao desejada: "<<n<<"";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             getline(cin,busca);
-            cout<<"========== "<<busca<<" =========="<<endl;
+            cout<<""<<r<<"========== "<<busca<<" =========="<<n<<""<<endl;
             for(int i=0;i<26;i++){
                 if(posicoes[i]==busca){
                     encontrou=1;
-                    cout<<"Nome: "<<elenco[i]<<endl;
-                    cout<<"Altura: "<<altura[i]<<" m"<<endl;
-                    cout<<"Peso: "<<peso[i]<<" kg"<<endl;
+                    cout<<""<<n<<"Nome: "<<elenco[i]<<endl;
+                    cout<<""<<n<<"Altura: "<<altura[i]<<" m"<<endl;
+                    cout<<""<<n<<"Peso: "<<peso[i]<<" kg"<<endl;
                     if(album[i]>=1)
-                        cout<<"Figurinha: Possui"<<endl;
+                        cout<<""<<n<<"Figurinha: Possui"<<endl;
                     else
-                        cout<<"Figurinha: Falta"<<endl;
-                    cout<<"---------------------------"<<endl;
+                        cout<<""<<n<<"Figurinha: Falta"<<endl;
+                    cout<<""<<n<<"---------------------------"<<endl;
                 }
             }
             if(encontrou==0){
-                cout<<"Nenhum jogador encontrado nessa posicao!"<<endl;
+                cout<<""<<n<<"Nenhum jogador encontrado nessa posicao!"<<endl;
             }
         
             sleep(20);
         }
         else if(op==7){ 
-            cout<<"Encerrando o album de figurinhas..."<<endl;
+            cout<<""<<sr<<"Encerrando o album de figurinhas..."<<endl;
         }
         else{
-            cout<<"Opcao invalida!"<<endl;
+            cout<<""<<sr<<"Opcao invalida!"<<endl;
             sleep(1);
         }
     }while(op!=7);
