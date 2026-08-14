@@ -2,13 +2,13 @@
 using namespace std;
 int main() 
 {
-    string elenco[26]={"Diogo Costa", "José de Sá", "Rui Silva", "Nélson Semedo", "Rúben Dias", "Tomás Araújo", "Diogo Dalot", "Renato Veiga", "Gonçalo Inácio", "João Cancelo", 
-    "Nuno Mendes", "Matheus Nunes", "Bruno Fernandes", "Bernardo Silva", "João Neves", "Rúben Neves", "Vitinha", "Samú Costa", "Cristiano Ronaldo", "Gonçalo Ramos",
-    "João Félix", "Francisco Trincão", "Rafael Leão", "Pedro Neto", "Gonçalo Guedes", "Francisco Conceição"};
+    string elenco[26]={"diogo costa", "josé de sá", "rui silva", "nélson semedo", "rúben dias", "tomás araújo", "diogo dalot", "renato veiga", "gonçalo inácio", "joão cancelo", 
+    "nuno mendes", "matheus nunes", "bruno fernandes", "bernardo silva", "joão neves", "rúben neves", "vitinha", "samú Costa", "cristiano ronaldo", "gonçalo ramos",
+    "joão félix", "francisco trincão", "rafael leão", "pedro neto", "gonçalo guedes", "francisco conceição"};
 
-    string posicoes[26]={"Goleiro", "Goleiro", "Goleiro", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor", "Defensor","Defensor",
-    "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Meio-campista", "Atacante", "Atacante", "Atacante", "Atacante", "Atacante", 
-    "Atacante", "Atacante", "Atacante"};
+    string posicoes[26]={"goleiro", "goleiro", "goleiro", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor","defensor",
+    "meio-campista", "meio-campista", "meio-campista", "meio-campista", "meio-campista", "meio-campista", "atacante", "atacante", "atacante", "atacante", "atacante", 
+    "atacante", "atacante", "atacante"};
 
     double peso[26]={86, 84, 91, 67, 82, 79, 76, 83, 82, 74,70, 78, 69, 64, 72, 80, 64, 73, 85, 88,70, 72, 81, 62, 68, 64};
 
@@ -161,6 +161,9 @@ int main()
             cout<<""<<r<<"Digite o nome do jogador: "<<n<<"";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             getline(cin,busca);
+            for(int i=0;i<busca.size();i++){
+                busca[i]=tolower(busca[i]);
+            }
             for(int i=0;i<26;i++){
                 if(elenco[i]==busca){
                     encontrou=1;
@@ -190,6 +193,9 @@ int main()
             cout<<""<<r<<"Digite a posicao desejada: "<<n<<"";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             getline(cin,busca);
+            for(int i=0;i<busca.size();i++){
+                busca[i]=tolower(busca[i]);
+            }
             cout<<""<<r<<"========== "<<busca<<" =========="<<n<<""<<endl;
             for(int i=0;i<26;i++){
                 if(posicoes[i]==busca){
