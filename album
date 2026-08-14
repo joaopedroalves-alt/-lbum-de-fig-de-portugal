@@ -85,6 +85,7 @@ int main()
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             op = -1;
         }
+        //Jogadores
         if(op==1){
             cout<<""<<r<<"-+-============--+- Seleção Portuguesa -+--============-+-"<<n<<""<<endl;
             for(int i=0;i<26;i++){
@@ -95,6 +96,7 @@ int main()
             }
            sleep(10);
         } 
+//Abrir pacote
         else if(op==2){
             cout<<""<<r<<"-+-============--+- Abrindo pacote -+--============-+-"<<n<<""<<endl;
              for(int i=0;i<3;i++){
@@ -110,6 +112,7 @@ int main()
                 cout<<""<<n<<"Pacote adicionado ao album!"<<endl;
                 sleep(5);
             }
+//status
         else if(op==3){
             cout<<""<<r<<"-+-============--+- Status do album -+--============-+-"<<n<<""<<endl;
             cout<<endl;
@@ -139,6 +142,7 @@ int main()
             cout<<""<<r<<"====================================="<<endl;
             sleep(10);
         }
+//fig rep
         else if(op==4){
             int encontrou=0;
             cout<<""<<r<<"-+-============--+- Repetidas -+--============-+-"<<n<<""<<endl;
@@ -155,6 +159,7 @@ int main()
             }
             sleep(10);
         }
+//buscapornome
         else if(op==5){
             string busca;
             int encontrou=0;
@@ -187,6 +192,7 @@ int main()
             }
             sleep(20);
         }
+//buscaporposição
         else if(op==6){
             string busca;
             int encontrou=0;
