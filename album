@@ -3,7 +3,7 @@ using namespace std;
 int main() 
 {
     string elenco[26]={"diogo costa", "josé de sá", "rui silva", "nélson semedo", "rúben dias", "tomás araújo", "diogo dalot", "renato veiga", "gonçalo inácio", "joão cancelo", 
-    "nuno mendes", "matheus nunes", "bruno fernandes", "bernardo silva", "joão neves", "rúben neves", "vitinha", "samú Costa", "cristiano ronaldo", "gonçalo ramos",
+    "nuno mendes", "matheus nunes", "bruno fernandes", "bernardo silva", "joão neves", "rúben neves", "vitinha", "samú costa", "cristiano ronaldo", "gonçalo ramos",
     "joão félix", "francisco trincão", "rafael leão", "pedro neto", "gonçalo guedes", "francisco conceição"};
 
     string posicoes[26]={"goleiro", "goleiro", "goleiro", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor", "defensor","defensor",
@@ -248,9 +248,11 @@ cout<<"                   "<<p<<"..:+                                          .
 cout<<"                 "<<preto<<"=-+-.                                            ::::.*         "<<endl;    
 cout<<"               ..:==:                                              =++=:.-.       "<<endl;   
 cout<<"            .+=++:                                               --=+++++++:.."<<endl;
+            
+            }
             cout<<""<<r<<"Digite para retornar ao menu!"<<endl;
             cin>>op;
-            }
+        }
 //buscaporposição
         else if(op==6){
             string busca;
@@ -281,6 +283,7 @@ cout<<"            .+=++:                                               --=+++++
             cout<<""<<r<<"Digite para retornar ao menu!"<<endl;
             cin>>op;
         }
+        
         else if(op==7){ 
             cout<<""<<sr<<"Encerrando o album de figurinhas..."<<endl;
         }
@@ -289,7 +292,9 @@ cout<<"            .+=++:                                               --=+++++
             cout<<""<<r<<"Digite para retornar ao menu!"<<endl;
             cin>>op;
         }
-        }
-    }while(op!=7);
-return 0;
+        
+
+    } while(op != 7);
+
+    return 0;
 }
